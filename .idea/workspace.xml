@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7caece88-8d27-411b-adb7-6edeca64c921" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_this.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-592">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#169#535#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/env.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-145">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#152#352#0" />
+                <element signature="e#388#576#0" />
+                <element signature="e#609#661#0" />
+                <element signature="e#718#1588#0" />
+                <element signature="e#1624#1948#0" />
+                <element signature="e#1973#2712#0" />
+                <element signature="e#2750#3915#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ddpg_90u10e4lKAIST/rewards.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>O</find>
+      <find>proper_edge_loc</find>
+      <find>proper_edge_lo</find>
+      <find>93</find>
+      <find>user.req.edge_id</find>
+      <find>priority</find>
+      <find>maintain_reques</find>
+      <find>maintai</find>
+      <find>get_dimension</find>
+      <find>point</find>
+      <find>dispatch_color</find>
+      <find>time.sle</find>
+      <find>render</find>
+      <find>loc</find>
+      <find>migration_s</find>
+      <find>arrange_screen</find>
+      <find>6</find>
+      <find>generate_priority</find>
+      <find>edge.loc</find>
+      <find>req.edge</find>
+      <find>edge_loc</find>
+      <find>time</find>
+      <find>maintain_request</find>
+      <find>indicate_edge</find>
+      <find>last_offlaoding_pred</find>
+      <find>task_inf</find>
+      <find>RENDER</find>
+      <find>generate_state</find>
+      <find>self.O</find>
+      <find>loss</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/simple_policy.py" />
+        <option value="$PROJECT_DIR$/gui.py" />
+        <option value="$PROJECT_DIR$/close_policy.py" />
+        <option value="$PROJECT_DIR$/render.py" />
+        <option value="$PROJECT_DIR$/priority_policy.py" />
+        <option value="$PROJECT_DIR$/DDPG.py" />
+        <option value="$PROJECT_DIR$/run_this.py" />
+        <option value="$PROJECT_DIR$/env.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="495" />
+    <option name="width" value="734" />
+    <option name="height" value="867" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="version_22" type="b2602c69:ProjectViewProjectNode" />
+              <item name="version_22" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="version_22" type="b2602c69:ProjectViewProjectNode" />
+              <item name="version_22" type="462c0819:PsiDirectoryNode" />
+              <item name="ddpg_90u10e4lKAIST" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/env_1.py" />
+    <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/../version_20" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\snaclab\PycharmProjects\version_19" />
+      <recent name="C:\Users\snaclab\PycharmProjects\version_15" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.run_this">
+    <configuration name="close_policy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="version_14" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/close_policy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="env" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="version_14" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/env.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="priority_policy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="version_14" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/priority_policy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="render" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="version_14" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/render.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_this" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="version_14" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_this.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run_this" />
+        <item itemvalue="Python.close_policy" />
+        <item itemvalue="Python.priority_policy" />
+        <item itemvalue="Python.render" />
+        <item itemvalue="Python.env" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7caece88-8d27-411b-adb7-6edeca64c921" name="Default Changelist" comment="" />
+      <created>1564987914060</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564987914060</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="495" y="0" width="734" height="867" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31178162" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893162" weight="0.38283378" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33260393" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32974428" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50106835" side_tool="true" weight="0.15645514" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/90u10e4lKAIST/rewards.png" />
+    <entry file="file://$PROJECT_DIR$/simple_policy.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c30u10e3lKAIST/rewards.png" />
+    <entry file="file://$PROJECT_DIR$/c10u10e3lKAIST/rewards.png" />
+    <entry file="file://$PROJECT_DIR$/10u10e4lKAIST/rewards.png" />
+    <entry file="file://$PROJECT_DIR$/gui.py" />
+    <entry file="file://$PROJECT_DIR$/c10u10e20lKAIST/rewards.png" />
+    <entry file="file://$PROJECT_DIR$/p5u2e1lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/c50u10e4lKAIST/rewards.png" />
+    <entry file="file://$PROJECT_DIR$/c50u10e4lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/priority_20u10e4lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/priority_30u10e4lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/priority_40u10e4lKAIST/rewards.png" />
+    <entry file="file://$PROJECT_DIR$/priority_40u10e4lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/priority_50u10e4lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/priority_60u10e4lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/priority_70u10e4lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/priority_80u10e4lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/close_70u10e4lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/priority_10u10e4lKAIST/rewards.png" />
+    <entry file="file://$PROJECT_DIR$/priority_10u10e4lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/priority_90u10e4lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/ddpg_60u10e4lKAIST/variance.png" />
+    <entry file="file://$PROJECT_DIR$/ddpg_10u10e4lKAIST/variance.png" />
+    <entry file="file://$PROJECT_DIR$/ddpg_30u10e4lKAIST/variance.png" />
+    <entry file="file://$PROJECT_DIR$/ddpg_40u10e4lKAIST/rewards.png" />
+    <entry file="file://$PROJECT_DIR$/ddpg_40u10e4lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/ddpg_60u10e4lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/ddpg_30u10e4lKAIST/record.txt" />
+    <entry file="file://$PROJECT_DIR$/line.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/render.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding>
+            <element signature="e#1#22#0" expanded="true" />
+            <element signature="e#1451#1683#0" />
+            <element signature="e#1720#2253#0" />
+            <element signature="e#2307#2612#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddpg_10u10e4lKAIST/record.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1249" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/priority_policy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#176#376#0" />
+            <element signature="e#412#600#0" />
+            <element signature="e#633#685#0" />
+            <element signature="e#728#1539#0" />
+            <element signature="e#1575#1899#0" />
+            <element signature="e#1924#2703#0" />
+            <element signature="e#2741#3906#0" />
+            <element signature="e#2958#3891#0" />
+            <element signature="e#4231#6849#0" />
+            <element signature="e#6872#7404#0" />
+            <element signature="e#7428#7880#0" />
+            <element signature="e#7966#13134#0" />
+            <element signature="e#13225#15951#0" />
+            <element signature="e#16031#21293#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/close_policy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="357" column="16" lean-forward="true" selection-start-line="357" selection-start-column="16" selection-end-line="357" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#176#376#0" />
+            <element signature="e#412#600#0" />
+            <element signature="e#633#685#0" />
+            <element signature="e#732#1318#0" />
+            <element signature="e#1356#2520#0" />
+            <element signature="e#2808#5426#0" />
+            <element signature="e#5449#5981#0" />
+            <element signature="e#6005#6457#0" />
+            <element signature="e#6543#11713#0" />
+            <element signature="e#11801#14165#0" />
+            <element signature="e#14245#19511#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_this.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-592">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#169#535#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddpg_90u10e4lKAIST/variance.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DDPG.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddpg_30u10e4lKAIST/rewards.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddpg_20u10e4lKAIST/rewards.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddpg_10u10e4lKAIST/rewards.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddpg_60u10e4lKAIST/rewards.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddpg_50u10e4lKAIST/rewards.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddpg_90u10e4lKAIST/record.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-499" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#152#352#0" />
+            <element signature="e#388#576#0" />
+            <element signature="e#609#661#0" />
+            <element signature="e#718#1588#0" />
+            <element signature="e#1624#1948#0" />
+            <element signature="e#1973#2712#0" />
+            <element signature="e#2750#3915#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ddpg_90u10e4lKAIST/rewards.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+  </component>
+</project>
