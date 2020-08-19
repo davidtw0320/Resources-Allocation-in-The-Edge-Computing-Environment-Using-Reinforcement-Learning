@@ -140,8 +140,8 @@ SCREEN_RENDER = True / False
 ## Simulation Result
 
 + Simulation Environment
-  + 10 edge servers with computational resources *(6.3 * 1e7 byte/sec)*
-  + Each edge server can offer at most 4 task processing services.
+  + 10 edge servers with computational resources *6.3 * 1e7 byte/sec*
+  + Each edge server can provide at most 4 task processing services.
   + 3000 steps/episode, 90000 sec/episode
 
 + Result
