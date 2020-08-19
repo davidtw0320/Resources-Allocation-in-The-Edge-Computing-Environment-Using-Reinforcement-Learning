@@ -54,7 +54,7 @@ SCREEN_RENDER = True / False
   + Each edge server can only offer service to limited numbers of users and allocate computational resources to them.
   + The task may be migrated from one edge server to another one within limited bandwidth *(1e9 byte/sec)*.
 
-+ Request Task: [VOC SSD300 Objection detection](hhttps://link.springer.com/chapter/10.1007/978-3-319-46448-0_2)
++ Request Task: [VOC SSD300 Objection detection](https://link.springer.com/chapter/10.1007/978-3-319-46448-0_2)
   + state 1 : start to offload a task to the edge server
   + state 2 : request task is on the way to the edge server *(2.7 * 1e4 byte)*
   + state 3 : request task is proccessed *(1.08 * 1e6 byte)*
