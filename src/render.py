@@ -82,7 +82,7 @@ class Demo:
         self.x_min, self.x_Max, self.y_min, self.y_Max = get_info(U, MAX_EP_STEPS)
         self.screen_size, self.rate = arrange_screen(self.x_min, self.x_Max, self.y_min, self.y_Max)
         self.tk = Tk()
-        self.tk.title("Game_ball")
+        self.tk.title("Simulation: Resource Allocation in Egde Computing Environment")
         self.tk.resizable(0, 0)
         self.tk.wm_attributes("-topmost", 1)
         self.canvas = Canvas(self.tk, width=1000, height=1000, bd=0, highlightthickness=0, bg='black')
@@ -162,29 +162,5 @@ class EdgeServer():
     def __init__(self, edge_id, loc):
         self.edge_id = edge_id  # edge server number
         self.loc = loc
-
-if __name__ == "__main__":
-    # user
-    U = []
-    data_num = random.sample(list(range(TXT_NUM)), USER_NUM)
-    for i in range(USER_NUM):
-        new_user = UE(i, data_num[i])
-        U.append(new_user)
-    # edge
-    E = []
-    e_l = proper_edge_loc(EDGE_NUM)
-    for i in range(EDGE_NUM):
-        new_e = EdgeServer(i, e_l[i, :])
-        E.append(new_e)
-    # Offlaoding
-    O = np.zeros((USER_NUM))
-
-    # canvas
-    canvas = Demo(E, U, O, MAX_EP_STEPS)
-    # run time
-    for t in range(MAX_EP_STEPS):
-        for user in U:
-            user.mobility_update(t)
-        canvas.draw(E, U, O)
 
 

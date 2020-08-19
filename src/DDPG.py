@@ -1,13 +1,14 @@
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import numpy as np
 import time
 
 #####################  hyper parameters  ####################
-LR_A = 0.0000001    # learning rate for actor
-LR_C = 0.0000001    # learning rate for critic
+LR_A = 0.0001    # learning rate for actor
+LR_C = 0.0002    # learning rate for critic
 GAMMA = 0.9     # reward discount
 TAU = 0.01      # soft replacement
-BATCH_SIZE = 1
+BATCH_SIZE = 32
 OUTPUT_GRAPH = False
 
 ###############################  DDPG  ####################################

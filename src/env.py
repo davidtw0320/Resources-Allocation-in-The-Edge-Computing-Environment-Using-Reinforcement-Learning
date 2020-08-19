@@ -4,9 +4,10 @@ import math
 import matplotlib.pyplot as plt
 import os
 from render import Demo
+
 #####################  hyper parameters  ####################
 LOCATION = "KAIST"
-USER_NUM = 80
+USER_NUM = 25
 EDGE_NUM = 10
 LIMIT = 4
 MAX_EP_STEPS = 3000
@@ -54,11 +55,6 @@ def generate_state(two_table, U, E, x_min, y_min):
         count += 1
     # location of the user
     for user in U:
-        """
-        dist = np.sqrt(np.sum(np.square(user.loc[0] - E[int(user.req.edge_id)].loc)))
-        S[count] = dist / 1e5
-        count += 1
-        """
         S[count] = (user.loc[0][0] + abs(x_min))/1e5
         S[count+1] = (user.loc[0][1] + abs(y_min))/1e5
         count += 2
@@ -82,7 +78,7 @@ def get_minimum():
     for data_num in range(TXT_NUM):
         data_name = str("%03d" % (data_num + 1))  # plus zero
         file_name = LOCATION + "_30sec_" + data_name + ".txt"
-        file_path = LOCATION + "/" + file_name
+        file_path = "data/" + LOCATION + "/" + file_name
         f = open(file_path, "r")
         f1 = f.readlines()
         # get line_num
@@ -111,7 +107,7 @@ def proper_edge_loc(edge_num):
         for data_num in range(base, base + group_num):
             data_name = str("%03d" % (data_num + 1))  # plus zero
             file_name = LOCATION + "_30sec_" + data_name + ".txt"
-            file_path = LOCATION + "/" + file_name
+            file_path = "data/" + LOCATION + "/" + file_name
             f = open(file_path, "r")
             f1 = f.readlines()
             # get line_num and initial data
@@ -144,7 +140,7 @@ class UE():
         # calculate num_step and define self.mob
         data_num = str("%03d" % (data_num + 1))  # plus zero
         file_name = LOCATION + "_30sec_" + data_num + ".txt"
-        file_path = LOCATION + "/" + file_name
+        file_path = "data/" + LOCATION + "/" + file_name
         f = open(file_path, "r")
         f1 = f.readlines()
         data = 0
@@ -227,7 +223,7 @@ class Request():
 
 class TaskType():
     def __init__(self):
-        ##Objection detection: VOC SSD512
+        ##Objection detection: VOC SSD300
         # transmission
         self.req_u2e_size = 300 * 300 * 3 * 1
         self.process_loading = 300 * 300 * 3 * 4
@@ -489,58 +485,6 @@ class Env():
             user.generate_request(self.O[user.user_id])
         return generate_state(self.table, self.U, self.E, self.x_min, self.y_min)
 
-    def priority_step_forward(self):
-
-        # record s
-        s = generate_state(self.table, self.U, self.E, self.x_min, self.y_min)
-
-        # release the bandwidth
-        self.table = BandwidthTable(self.edge_num)
-        # release the resource
-        for edge in self.E:
-            edge.release()
-
-        # resource update
-        self.R = self.model.resource_update(self.R, self.E, self.U)
-        # offloading update
-        self.priority = self.model.generate_priority(self.U, self.E, self.priority)
-        self.O = self.model.indicate_edge(self.O, self.U, self.priority)
-        # bandwidth update
-        self.B = self.model.bandwidth_update(self.O, self.table, self.B, self.U, self.E)
-
-        # request update
-        for user in self.U:
-            # update the state of the request
-            user.request_update()
-            # it has already finished the request
-            if user.req.state == 4:
-                # rewards
-                self.fin_req_count += 1
-                user.req.state = 5  # request turn to "disconnect"
-                self.E[int(user.req.edge_id)].user_group.remove(user.req.user_id)
-                user.generate_request(self.O[user.user_id])  # offload according to the priority
-
-        # edge update
-        for edge in self.E:
-            edge.maintain_request(self.R, self.U)
-            self.table = edge.migration_update(self.O, self.B, self.table, self.U, self.E)
-
-        # rewards
-        self.rewards = self.fin_req_count - self.prev_count
-        self.prev_count = self.fin_req_count
-
-        # every user start to move
-        if self.time % self.step == 0:
-            for user in self.U:
-                user.mobility_update(self.time)
-
-        # update time
-        self.time += 1
-
-        # s, a, r, s_
-
-        return s, generate_action(self.R, self.B, self.O), self.rewards, generate_state(self.table, self.U, self.E, self.x_min, self.y_min)
-
     def ddpg_step_forward(self, a, r_dim, b_dim):
         # release the bandwidth
         self.table = BandwidthTable(self.edge_num)
@@ -621,54 +565,3 @@ class Env():
 
     def screen_demo(self):
         self.canvas.draw(self.E, self.U, self.O)
-
-#############################Run###########################
-
-if __name__ == "__main__":
-    env = Env()
-    ep_reward = []
-    epoch_inf = []
-    for episode in range(MAX_EPISODE):
-        env.reset()
-        ep_reward.append(0)
-        # initialize render
-        if SCREEN_RENDER:
-            env.initial_screen_demo()
-        for j in range(MAX_EP_STEPS):
-            r = env.priority_step_forward()
-            ep_reward[episode] += r
-            # text render
-            if TEXT_RENDER and j % 30 == 0:
-                env.text_render()
-            # screen render
-            if SCREEN_RENDER:
-                env.screen_demo()
-        # close the window
-        if SCREEN_RENDER:
-            env.canvas.tk.destroy()
-        # end for loop
-        print("Episode %3d: " % episode + "%5d" % ep_reward[episode])
-        string = "Episode %3d: " % episode + "%5d" % ep_reward[episode]
-        epoch_inf.append(string)
-
-    # make directory
-    dir_name = "priority_" + str(USER_NUM) + 'u' + str(EDGE_NUM) + 'e' + str(LIMIT) + 'l' + LOCATION
-    os.makedirs(dir_name)
-    # plot the reward
-    fig_reward = plt.figure()
-    plt.plot([i + 1 for i in range(MAX_EPISODE)], ep_reward)
-    plt.xlabel("episode")
-    plt.ylabel("rewards")
-    fig_reward.savefig(dir_name + '/rewards.png')
-    # write the record
-    f = open(dir_name + '/record.txt', 'a')
-    f.write('time(s):' + str(MAX_EP_STEPS) + '\n\n')
-    f.write('user_number:' + str(USER_NUM) + '\n\n')
-    f.write('edge_number:' + str(EDGE_NUM) + '\n\n')
-    f.write('limit:' + str(LIMIT) + '\n\n')
-    for i in range(MAX_EPISODE):
-        f.write(epoch_inf[i] + '\n')
-    print("the mean of the rewards:", str(np.mean(ep_reward)))
-    f.write("the mean of the rewards:" + str(np.mean(ep_reward)))
-    token = 'AW1gzNd7TO6WvmzL76zwFcwyHWF5prXaG3n3QydNcgE'
-    line.lineNotifyMessage(token, dir_name + " is finish:" + str(np.mean(ep_reward[-20:])))
