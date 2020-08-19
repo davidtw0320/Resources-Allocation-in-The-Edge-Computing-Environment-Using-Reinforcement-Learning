@@ -124,8 +124,8 @@ SCREEN_RENDER = True / False
     return a
   ```
 
-  + **Computing resource** allocated to each mobile user's task (contiuous)
-  + **Migration bandwidth** of each mobile user's task needs to occupy (contiuous)
+  + **Computing resource** allocated to each mobile user's task (continuous)
+  + **Migration bandwidth** of each mobile user's task needs to occupy (continuous)
   + **offloading target** of each mobile user (discrete)
 
 + Reward
