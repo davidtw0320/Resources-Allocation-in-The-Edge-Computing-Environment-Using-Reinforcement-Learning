@@ -1,9 +1,9 @@
-# ***Resource Allocation in The Edge Computing Environment***
+# ***Resources Allocation in The Edge Computing Environment***
 
 ## Summary
-With the development of cloud computing based mobile applications, such as object detection, face recognition, have become overwhelming in recent years. However, because of the remote execution, cloud computing may cause high latency and increase the backhaul bandwidth consumption. To address this problem, edge computing is promising to improve response times and relieve the backhaul pressure by moving the storage and computing resources closer to mobile users.
+With the development of cloud computing based mobile applications, such as object detection, face recognition, have become popular in recent years. However, cloud computing may cause high latency and increase the backhaul bandwidth consumption because of the remote execution. To address problems, edge computing can improve response times and relieve the backhaul pressure by moving the storage and computing resources closer to mobile users.
 
-Considering the mobile user mobility, offloading decision, and heterogeneous resources requirement in an edge computing environment, the project aims to use Reinforce Learning (RL) model to allocate the resource in an edge computing environment.
+Considering the computational resources allocation, migration bandwidth allocation ,and offloading target decision in an edge computing environment, the project aims to use Reinforcement Learning (RL) approach to allocating resources in an edge computing environment.
 
  ![gui](image/Summary.png)
  picture originated from: [IEEE Inovation at Work](https://innovationatwork.ieee.org/real-life-edge-computing-use-cases/)
@@ -103,7 +103,7 @@ SCREEN_RENDER = True / False
         return S
   ```
 
-  + **Available computing resource** of each edge server
+  + **Available computing resources** of each edge server
   + **Available migration bandwidth** of each connection between edge servers
   + **Offloading target** of each mobile user
   + **Location** of each mobile user
@@ -124,7 +124,7 @@ SCREEN_RENDER = True / False
     return a
   ```
 
-  + **Computing resource** allocated to each mobile user's task (continuous)
+  + **Computing resources** allocated to each mobile user's task (continuous)
   + **Migration bandwidth** of each mobile user's task needs to occupy (continuous)
   + **offloading target** of each mobile user (discrete)
 
@@ -140,7 +140,7 @@ SCREEN_RENDER = True / False
 ## Simulation Result
 
 + Simulation Environment
-  + 10 edge servers with computational resource *(6.3 * 1e7 byte/sec)*
+  + 10 edge servers with computational resources *(6.3 * 1e7 byte/sec)*
   + Each edge server can offer at most 4 task processing services.
   + 3000 steps/episode, 90000 sec/episode
 
