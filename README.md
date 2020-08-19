@@ -146,7 +146,7 @@ SCREEN_RENDER = True / False
 
 + Result
     | Number of Clients | Average Total proccessed tasks in the last 10 episodes| Training History |
-    | ------- | -------- | -------- |
+    | :-------: | :--------: | :--------: |
     | 10 | 11910 | ![result](output/ddpg_10u10e4lKAIST/rewards.png) |
     | 20 | 23449 | ![result](output/ddpg_20u10e4lKAIST/rewards.png) |
     | 30 | 33257 | ![result](output/ddpg_30u10e4lKAIST/rewards.png) |
