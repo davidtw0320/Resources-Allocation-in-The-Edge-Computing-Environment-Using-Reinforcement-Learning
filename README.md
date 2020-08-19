@@ -5,7 +5,7 @@ With the development of cloud computing based mobile applications, such as objec
 
 Considering the mobile user mobility, offloading decision, and heterogeneous resources requirement in an edge computing environment, the project aims to use Reinforce Learning (RL) model to allocate the resource in an edge computing environment.
 
- ![gui](image/summary.png)
+ ![gui](image/Summary.png)
  picture originated from: [IEEE Inovation at Work](https://innovationatwork.ieee.org/real-life-edge-computing-use-cases/)
 ***
 
