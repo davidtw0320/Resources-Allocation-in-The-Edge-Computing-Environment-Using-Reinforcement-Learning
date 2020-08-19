@@ -129,7 +129,7 @@ SCREEN_RENDER = True / False
   + **offloading target** of each mobile user (discrete)
 
 + Reward
-  + total processed tasks in each step
+  + **total processed** tasks in each step
 
 + Model Architecture
 
