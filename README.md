@@ -81,10 +81,6 @@ SCREEN_RENDER = True / False
   While determining the offloading server of each user is a discrete variable problem, allocating computing resources and migration bandwidth are continuous variable problems. Thus, Deep Deterministic Policy Gradient (DDPG), a model-free off-policy actor-critic algorithm, can solve both discrete and continuous problems. Also, DDPG updates model weights every step, which means the model can adapt to a dynamic environment instantly.
 
 + State
-  + **Available computing resource** of each edge server
-  + **Available migration bandwidth** of each connection between edge servers
-  + **Offloading target** of each mobile user
-  + **Location** of each mobile user
 
   ```python
     def generate_state(two_table, U, E, x_min, y_min):
@@ -107,10 +103,12 @@ SCREEN_RENDER = True / False
         return S
   ```
 
+  + **Available computing resource** of each edge server
+  + **Available migration bandwidth** of each connection between edge servers
+  + **Offloading target** of each mobile user
+  + **Location** of each mobile user
+
 + Action
-  + **Computing resource** allocated to each mobile user's task (contiuous)
-  + **Migration bandwidth** of each mobile user's task needs to occupy (contiuous)
-  + **offloading target** of each mobile user (discrete)
 
   ```python
   def generate_action(R, B, O):
@@ -125,6 +123,10 @@ SCREEN_RENDER = True / False
         base += EDGE_NUM
     return a
   ```
+
+  + **Computing resource** allocated to each mobile user's task (contiuous)
+  + **Migration bandwidth** of each mobile user's task needs to occupy (contiuous)
+  + **offloading target** of each mobile user (discrete)
 
 + Reward
   + total processed tasks in each step
