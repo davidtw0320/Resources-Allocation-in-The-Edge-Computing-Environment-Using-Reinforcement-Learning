@@ -27,8 +27,8 @@ def get_info(U, MAX_EP_STEPS):
 
 #####################  hyper parameters  ####################
 MAX_SCREEN_SIZE = 1000
-EDGE_SIZE = 10
-USER_SIZE = 5
+EDGE_SIZE = 20
+USER_SIZE = 10
 
 #####################  User  ####################
 class oval_User:
@@ -83,7 +83,7 @@ class Demo:
             self.x_rate = (MAX_SCREEN_SIZE / x_range)
             self.y_rate = (MAX_SCREEN_SIZE / y_range) * (1/self.rate)
         else:
-            self.x_rate = (MAX_SCREEN_SIZE / x_range) * (self.rate)
+            self.x_rate = (MAX_SCREEN_SIZE / x_range) * (self.rate
             self.y_rate = (MAX_SCREEN_SIZE / y_range)
 
         self.edge_color = []

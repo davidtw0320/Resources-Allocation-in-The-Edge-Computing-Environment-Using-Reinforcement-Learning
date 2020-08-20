@@ -157,6 +157,9 @@ SCREEN_RENDER = True / False
 
 + Demo Environment
 
+  + 35 mobile users and 10 edge servers in the environment
+  + Each edge server can provide at most 4 task processing services.
+
 + Demo Video
 
   ![demo video](image/demo.mov)
