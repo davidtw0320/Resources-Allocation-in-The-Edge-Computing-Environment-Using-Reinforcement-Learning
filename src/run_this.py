@@ -3,6 +3,7 @@ from DDPG import DDPG
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+import time
 
 #####################  hyper parameters  ####################
 CHECK_EPISODE = 4
@@ -11,6 +12,7 @@ MAX_EP_STEPS = 3000
 TEXT_RENDER = False
 SCREEN_RENDER = True
 CHANGE = False
+SLEEP_TIME = 0.1
 
 #####################  function  ####################
 def exploration (a, r_dim, b_dim, r_var, b_var):
@@ -47,6 +49,7 @@ if __name__ == "__main__":
             env.initial_screen_demo()
 
         for j in range(MAX_EP_STEPS):
+            time.sleep(SLEEP_TIME)
             # render
             if SCREEN_RENDER:
                 env.screen_demo()

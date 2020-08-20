@@ -25,21 +25,10 @@ def get_info(U, MAX_EP_STEPS):
             y_min = min(user.mob[:MAX_EP_STEPS, 1])
     return x_min, x_Max, y_min, y_Max
 
-def arrange_screen(x_min, x_Max, y_min, y_Max):
-    screen_size = []
-    rate = (x_Max - x_min)/(y_Max - y_min)
-    if rate > 1:
-        screen_size.append(MAX_SCREEN_SIZE)
-        screen_size.append(MAX_SCREEN_SIZE / rate)
-    else:
-        screen_size.append(MAX_SCREEN_SIZE * rate)
-        screen_size.append(MAX_SCREEN_SIZE)
-    return screen_size, rate
-
 #####################  hyper parameters  ####################
 MAX_SCREEN_SIZE = 1000
-EDGE_SIZE = 30
-USER_SIZE = 15
+EDGE_SIZE = 20
+USER_SIZE = 10
 
 #####################  User  ####################
 class oval_User:
@@ -80,22 +69,22 @@ class Demo:
     def __init__(self, E, U, O, MAX_EP_STEPS):
         # create canvas
         self.x_min, self.x_Max, self.y_min, self.y_Max = get_info(U, MAX_EP_STEPS)
-        self.screen_size, self.rate = arrange_screen(self.x_min, self.x_Max, self.y_min, self.y_Max)
         self.tk = Tk()
         self.tk.title("Simulation: Resource Allocation in Egde Computing Environment")
         self.tk.resizable(0, 0)
         self.tk.wm_attributes("-topmost", 1)
-        self.canvas = Canvas(self.tk, width=1000, height=1000, bd=0, highlightthickness=0, bg='black')
+        self.canvas = Canvas(self.tk, width=MAX_SCREEN_SIZE, height=1000, bd=0, highlightthickness=0, bg='black')
         self.canvas.pack()
         self.tk.update()
         x_range = self.x_Max - self.x_min
         y_range = self.y_Max - self.y_min
+        self.rate = x_range/y_range
         if self.rate > 1:
-            self.x_rate = MAX_SCREEN_SIZE / x_range
-            self.y_rate = MAX_SCREEN_SIZE / (self.rate * y_range)
+            self.x_rate = (MAX_SCREEN_SIZE / x_range)
+            self.y_rate = (MAX_SCREEN_SIZE / y_range) * (1/self.rate)
         else:
-            self.x_rate = MAX_SCREEN_SIZE * self.rate / x_range
-            self.y_rate = MAX_SCREEN_SIZE / y_range
+            self.x_rate = (MAX_SCREEN_SIZE / x_range) * (self.rate)
+            self.y_rate = (MAX_SCREEN_SIZE / y_range)
 
         self.edge_color = []
         self.edge_color = dispatch_color(self.edge_color, E)
@@ -110,14 +99,14 @@ class Demo:
         # edge
         edge_vector = np.zeros((1, 2))
         for edge in E:
-            edge_vector[0][0] = (edge.loc[0] + abs(self.x_min)) * self.x_rate - self.canvas.coords(self.oval_E[edge.edge_id].id)[0]
-            edge_vector[0][1] = (edge.loc[1] + abs(self.y_min)) * self.y_rate - self.canvas.coords(self.oval_E[edge.edge_id].id)[1]
+            edge_vector[0][0] = (edge.loc[0] - self.x_min) * self.x_rate - self.canvas.coords(self.oval_E[edge.edge_id].id)[0]
+            edge_vector[0][1] = (edge.loc[1] - self.y_min) * self.y_rate - self.canvas.coords(self.oval_E[edge.edge_id].id)[1]
             self.oval_E[edge.edge_id].draw(edge_vector)
         # user
         user_vector = np.zeros((1, 2))
         for user in U:
-            user_vector[0][0] = (user.loc[0][0] + abs(self.x_min)) * self.x_rate - self.canvas.coords(self.oval_U[user.user_id].id)[0]
-            user_vector[0][1] = (user.loc[0][1] + abs(self.y_min)) * self.y_rate - self.canvas.coords(self.oval_U[user.user_id].id)[1]
+            user_vector[0][0] = (user.loc[0][0] - self.x_min) * self.x_rate - self.canvas.coords(self.oval_U[user.user_id].id)[0]
+            user_vector[0][1] = (user.loc[0][1] - self.y_min) * self.y_rate - self.canvas.coords(self.oval_U[user.user_id].id)[1]
             self.oval_U[user.user_id].draw(user_vector, self.edge_color[int(O[user.user_id])], user)
         # 快速刷新屏幕
         self.tk.update_idletasks()
