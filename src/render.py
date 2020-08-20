@@ -83,7 +83,7 @@ class Demo:
             self.x_rate = (MAX_SCREEN_SIZE / x_range)
             self.y_rate = (MAX_SCREEN_SIZE / y_range) * (1/self.rate)
         else:
-            self.x_rate = (MAX_SCREEN_SIZE / x_range) * (self.rate
+            self.x_rate = (MAX_SCREEN_SIZE / x_range) * (self.rate)
             self.y_rate = (MAX_SCREEN_SIZE / y_range)
 
         self.edge_color = []
