@@ -46,7 +46,7 @@ SCREEN_RENDER = True / False
 + Mobile User
   + Users move according to the mobility data provided by [CRAWDAD](https://crawdad.org/index.html). This data was collected from the users of mobile devices at the subway station in Seoul, Korea.
   + Users' devices offload tasks to one edge server to obtain computation service.
-  + After a request task has been processed, users need to receive the processed task from the edge server and offload a new task to a edge server again.
+  + After a request task has been processed, users need to receive the processed task from the edge server and offload a new task to an edge server again.
 
 + Edge Server
   + Responsible for offering computational resources *(6.3 * 1e7 byte/sec)* and processing tasks for mobile users.
@@ -68,7 +68,7 @@ SCREEN_RENDER = True / False
     + Big dots with consistent color
   + Mobile users *(dynamic)*
     + Small dots with changing color
-    + Color 
+    + Color
       + Red : request task is in state 5
       + Green : request task is in state 6
       + others : request task is handled by the edge server with the same color and is in state 1 ~ state 4
