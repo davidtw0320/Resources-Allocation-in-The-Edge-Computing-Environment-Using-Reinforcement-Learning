@@ -63,7 +63,7 @@ SCREEN_RENDER = True / False
 
 + Graphic Interface
 
-  ![gui](image/graphic_interface.png)
+  ![gui](image/gi.png)
   + Edge servers *(static)*
     + Big dots with consistent color
   + Mobile users *(dynamic)*
@@ -162,7 +162,7 @@ SCREEN_RENDER = True / False
 
 + Demo Video
 
-  ![demo video](image/demo.mov)
+  ![demo video](image/Demo.mov)
 
 ***
 
