@@ -27,8 +27,8 @@ def get_info(U, MAX_EP_STEPS):
 
 #####################  hyper parameters  ####################
 MAX_SCREEN_SIZE = 1000
-EDGE_SIZE = 20
-USER_SIZE = 10
+EDGE_SIZE = 10
+USER_SIZE = 5
 
 #####################  User  ####################
 class oval_User:
