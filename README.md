@@ -1,9 +1,9 @@
-# ***Resources Allocation in The Edge Computing Environment***
+# ***Resources Allocation in The Edge Computing Environment Using Reinforcement Learning***
 
 ## Summary
-With the development of cloud computing based mobile applications, such as object detection, face recognition, have become popular in recent years. However, cloud computing may cause high latency and increase the backhaul bandwidth consumption because of the remote execution. To address problems, edge computing can improve response times and relieve the backhaul pressure by moving the storage and computing resources closer to mobile users.
+The cloud computing based mobile applications, such as augmented reality (AR), face recognition, and object recognition have become popular in recent years. However, cloud computing may cause high latency and increase the backhaul bandwidth consumption because of the remote execution. To address these problems, edge computing can improve response times and relieve the backhaul pressure by moving the storage and computing resources closer to mobile users.
 
-Considering the computational resources allocation, migration bandwidth allocation ,and offloading target decision in an edge computing environment, the project aims to use Reinforcement Learning (RL) approach to allocating resources in an edge computing environment.
+Considering the computational resources, migration bandwidth, and offloading target in an edge computing environment, the project aims to use Deep Deterministic Policy Gradient (DDPG), a kind of Reinforcement Learning (RL) approach, to allocate resources for mobile users in an edge computing environment.
 
  ![gui](image/Summary.png)
  picture originated from: [IEEE Inovation at Work](https://innovationatwork.ieee.org/real-life-edge-computing-use-cases/)
@@ -22,7 +22,6 @@ Considering the computational resources allocation, migration bandwidth allocati
 ### *Run The System*
 
 ```cmd
-# execute
 $ python3 src/run_this.py
 ```
 
@@ -45,14 +44,14 @@ SCREEN_RENDER = True / False
 ## *Edge Computing Environment*
 
 + Mobile User
-  + Users move according to the mobility data provided by [CRAWDAD](https://crawdad.org/index.html). This data was collected from the users of mobile devices at the subway station.
-  + User's device offload tasks to one edge server.
-  + After the request task has been processed, users need to receive processed packets from the edge server and send a new task to the edge server again.
+  + Users move according to the mobility data provided by [CRAWDAD](https://crawdad.org/index.html). This data was collected from the users of mobile devices at the subway station in Seoul, Korea.
+  + Users' devices offload tasks to one edge server to obtain computation service.
+  + After a request task has been processed, users need to receive the processed task from the edge server and offload a new task to a edge server again.
 
 + Edge Server
   + Responsible for offering computational resources *(6.3 * 1e7 byte/sec)* and processing tasks for mobile users.
-  + Each edge server can only offer service to limited numbers of users and allocate computational resources to them.
-  + The task may be migrated from one edge server to another one within limited bandwidth *(1e9 byte/sec)*.
+  + Each edge server can only provide service to limited numbers of users and allocate computational resources to them.
+  + The task may be migrated from one edge server to another within limited bandwidth *(1e9 byte/sec)*.
 
 + Request Task: [VOC SSD300 Objection Detection](https://link.springer.com/chapter/10.1007/978-3-319-46448-0_2)
   + state 1 : start to offload a task to the edge server
@@ -69,10 +68,10 @@ SCREEN_RENDER = True / False
     + Big dots with consistent color
   + Mobile users *(dynamic)*
     + Small dots with changing color
-    + Color
-      + the color of edge servers : request task is handled by the edge server with the same color and in state 1 ~ state 4  
+    + Color 
       + Red : request task is in state 5
       + Green : request task is in state 6
+      + others : request task is handled by the edge server with the same color and is in state 1 ~ state 4
 
 ## *Deep Deterministic Policy Gradient* (in DDPG.py)
 
@@ -124,12 +123,12 @@ SCREEN_RENDER = True / False
     return a
   ```
 
-  + **Computing resources** allocated to each mobile user's task (continuous)
+  + **Computing resources**  of each mobile user's task need to uses(continuous)
   + **Migration bandwidth** of each mobile user's task needs to occupy (continuous)
-  + **offloading target** of each mobile user (discrete)
+  + **Offloading target** of each mobile user (discrete)
 
 + Reward
-  + **total processed** tasks in each step
+  + **Total processed tasks** in each step
 
 + Model Architecture
 
